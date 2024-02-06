@@ -22,7 +22,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.use("/api/v1",dataRouter)
 
 // app.get("/api/v1/kaiwa", (req, res) => {
